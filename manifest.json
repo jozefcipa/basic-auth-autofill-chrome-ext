@@ -1,0 +1,25 @@
+{
+    "manifest_version": 2,
+    "name": "Basic Auth Autofill",
+    "description": "This extension will automatically submit Basic authentication popup for *.example.org requests.",
+    "version": "1.0",
+    "browser_action": {
+        "default_icon": "icon.png"
+    },
+    "icons": { 
+        "16": "icon.png",
+        "32": "icon.png",
+        "48": "icon.png",
+        "128": "icon.png"
+    },
+    "permissions": [
+        "activeTab",
+        "webRequest",
+        "webRequestBlocking",
+        "notifications",
+        "https://*.example.org/*"
+   ],
+    "background": {
+      "scripts": ["main.js"]
+    }
+}
